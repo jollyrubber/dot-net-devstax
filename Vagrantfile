@@ -41,6 +41,8 @@ Vagrant.configure(2) do |config|
                     "7zip",
                     "tortoisegit",
                     "googlechrome",
+                    "kdiff3",
+                    "resharper",
                     "chocolateygui"
                     ]
                 },
