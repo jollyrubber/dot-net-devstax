@@ -49,10 +49,11 @@ Vagrant.configure(2) do |config|
                 }
             }
 
+        chef.add_recipe "windows"
         chef.add_recipe "windows::reboot_handler"
-        chef.add_recipe "chef-devstax::visualstudio"
-        chef.add_recipe "chocolatey-installer"
         chef.add_recipe "iis"
         chef.add_recipe "iis::mod_aspnet45"
+        chef.add_recipe "chef-devstax::visualstudio"
+        chef.add_recipe "chocolatey-installer"
     end
 end
